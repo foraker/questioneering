@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   title: DS.attr('string'),
-  questions: DS.hasMany('question'),
-  resolutions: DS.hasMany('resolution')
+  content: DS.attr('string'),
+  questions: DS.hasMany(),
+  resolutions: DS.hasMany()
 });

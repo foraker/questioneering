@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  currentSite: Ember.inject.service(),
+
   model() {
-    return this.store.find('site', 1);
+    return this.get('currentSite').site();
   }
 });

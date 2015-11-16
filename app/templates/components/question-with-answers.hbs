@@ -1,0 +1,7 @@
+{{{question.content}}}
+
+{{#each question.answers as |answer|}}
+  {{answer-button answer=answer onClick=(action 'recordResolution')}}
+{{/each}}
+
+{{yield}}

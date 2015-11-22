@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   actions: {
     proceed(question) {
       this.get('nextStepCalculator').getStepAfter(question).then(function(nextStep) {
-        this.transitionTo('question', nextStep);
+        this.transitionTo(nextStep.name, nextStep.model);
       }.bind(this));
     }
   }

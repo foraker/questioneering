@@ -1,0 +1,13 @@
+.button {
+  border: 1px solid $border-color;
+  padding: 10px;
+  color: $action-text-color;
+  background-color: $action-color;
+  border-radius: $border-radius;
+  text-decoration: none;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: lighten($action-color, 5);
+  }
+}

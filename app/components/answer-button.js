@@ -1,8 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'button',
-  click: function() {
+  tagName: 'a',
+  classNames: 'button',
+  attributeBindings: ['href'],
+  href: '#',
+
+  click: function(e) {
+    e.preventDefault();
+
     this.answer.get('resolution').then((resolution) => {
       this.get('onClick')(resolution);
     });

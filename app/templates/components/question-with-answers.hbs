@@ -1,4 +1,4 @@
-{{{question.content}}}
+<p>{{{question.content}}}</p>
 
 {{#each question.answers as |answer|}}
   {{answer-button answer=answer onClick=(action 'recordResolution')}}

@@ -8,7 +8,7 @@ export default Ember.Service.extend({
   getStepAfter(question) {
     this.set('question', question);
 
-    return new Promise(function(resolve, reject) {
+    return new Ember.RSVP.Promise(function(resolve) {
       this.get('currentSite').site().then(function (site) {
         site.get('questions').then((questions) => {
           var question = questions.objectAt(questions.indexOf(this.get('question'))+1);
@@ -22,7 +22,7 @@ export default Ember.Service.extend({
             resolve({
               name: 'resolution',
               model: this.get('resolutionCounter').winningResolution()
-            })
+            });
           }
         });
       }.bind(this));

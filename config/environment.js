@@ -46,5 +46,14 @@ module.exports = function(environment) {
     ENV.APP.API_ENDPOINT = 'http://questioneering-api.herokuapp.com';
   }
 
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'font-src': "'self' https://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+    'img-src': "'self'",
+    'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+    'media-src': "'self'",
+    'connect-src': "'self' " + ENV.APP.API_ENDPOINT
+  }
+
   return ENV;
 };

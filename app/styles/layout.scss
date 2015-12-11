@@ -3,14 +3,17 @@ body {
 }
 
 .outer-container {
+  @include outer-container(100%);
+
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+  @include span-columns(6);
+  @include shift(3);
+
   flex: 1;
 }
 

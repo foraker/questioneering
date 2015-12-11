@@ -20,6 +20,8 @@ module.exports = function(environment) {
     }
   };
 
+  ENV.APP.API_ENDPOINT = 'http://localhost:3000';
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -41,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.APP.API_ENDPOINT = 'http://questioneering-api.herokuapp.com';
   }
 
   return ENV;

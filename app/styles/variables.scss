@@ -1,9 +1,20 @@
+// Neat Breakpoints
+$small-screen: 480px;
+$medium-screen: 600px;
+$large-screen: 900px;
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+
+
+
 /* Colors */
 
-$action-color: rgb(80, 80, 250);
-$action-text-color: rgb(200, 200, 200);
+$action-color: #2799f0;
+$action-text-color: #ffffff;
 $border-color: rgb(100, 100, 100);
-$footer-background-color: #F1F1F1;
+$outer-background-color: #9c9794;
+$inner-background-color: #eeeeee;
 
 /* Misc */
 

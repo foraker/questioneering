@@ -1,6 +1,9 @@
 .button {
   border: 1px solid $border-color;
-  padding: 10px;
+  padding: 10px 15px;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
   color: $action-text-color;
   background-color: $action-color;
   border-radius: $border-radius;

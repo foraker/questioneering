@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   nextStepCalculator: Ember.inject.service(),
 
   afterModel: function() {
-    if (this.get('store').peekAll('site').get('length') == 0) {
+    if (this.get('store').peekAll('site').get('length') === 0) {
       return this.transitionTo('index');
     }
   },

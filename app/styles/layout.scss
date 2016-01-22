@@ -16,7 +16,7 @@ body {
 
 .content-container {
   flex: 1;
-  padding: 50px;
+  padding: 20px;
 }
 
 .footer {
@@ -31,5 +31,9 @@ body {
   .container {
     @include span-columns(6);
     @include shift(3);
+  }
+
+  .content-container {
+    padding: 50px;
   }
 }

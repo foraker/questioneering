@@ -1,7 +1,9 @@
 <p>{{{question.content}}}</p>
 
-{{#each question.answers as |answer|}}
-  {{answer-button answer=answer onClick=(action 'recordResolution')}}
-{{/each}}
+<div class="actions">
+  {{#each question.answers as |answer|}}
+    {{answer-button answer=answer onClick=(action 'recordResolution')}}
+  {{/each}}
+</div>
 
 {{yield}}

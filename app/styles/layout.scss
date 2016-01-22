@@ -17,13 +17,23 @@ body {
 .content-container {
   flex: 1;
   padding: 20px;
+  text-align: center;
 }
 
 .footer {
-  padding: 7px;
+  padding: 7px 25px 7px 7px;
   text-align: right;
-  font-size: 0.8em;
-  border-top: 2px solid $outer-background-color;
+  font-size: 0.7em;
+
+  p {
+    display: inline-block;
+    line-height: 34px;
+    margin: 0;
+  }
+
+  p, img {
+    vertical-align: bottom;
+  }
 }
 
 
@@ -31,9 +41,13 @@ body {
   .container {
     @include span-columns(6);
     @include shift(3);
+
+    min-height: 95vh;
+    border-radius: 15px;
+    margin-top: 20px
   }
 
   .content-container {
-    padding: 50px;
+    padding: 50px 240px;
   }
 }

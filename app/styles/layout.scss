@@ -39,8 +39,8 @@ body {
 
 @include media($large-screen-up) {
   .container {
-    @include span-columns(6);
-    @include shift(3);
+    @include span-columns(8);
+    @include shift(2);
 
     min-height: 95vh;
     border-radius: 15px;
@@ -49,5 +49,12 @@ body {
 
   .content-container {
     padding: 50px 240px;
+  }
+}
+
+@include media($very-large-screen-up) {
+  .container {
+    @include span-columns(6);
+    @include shift(3);
   }
 }

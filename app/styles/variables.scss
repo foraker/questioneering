@@ -1,11 +1,12 @@
 // Neat Breakpoints
 $small-screen: 480px;
 $medium-screen: 600px;
-$large-screen: 900px;
+$large-screen: 1350px;
+$very-large-screen: 1800px;
 
 $medium-screen-up: new-breakpoint(min-width $medium-screen 4);
 $large-screen-up: new-breakpoint(min-width $large-screen 12);
-
+$very-large-screen-up: new-breakpoint(min-width $very-large-screen 12);
 
 
 /* Colors */

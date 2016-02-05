@@ -36,6 +36,12 @@ body {
   }
 }
 
+.start-over {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $outer-background-color;
+}
+
 
 @include media($large-screen-up) {
   .container {
